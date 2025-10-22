@@ -1,0 +1,25 @@
+
+    a.button {
+      display: inline-block;
+      
+      color: white; /* white text */
+    
+      border-radius: 8px;
+      text-decoration: none;
+     
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    /* Hover effect */
+    a.button:hover {
+      color: orange; /* darker blue */
+      transform: scale(1.05); /* slight zoom on hover */
+    }
+
+    /* When link is active (clicked) */
+    a.button:active {
+        background-color:darkslategrey;
+      transform: scale(0.98);
+      color: black;
+      
+    }
