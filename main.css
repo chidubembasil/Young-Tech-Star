@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: orange;
+    font-family: poppins;
+}
+a:hover{
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn{
+    background-color:transparent;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: fit-content;
+    justify-content: center;
+    margin-left: 530px;
+    margin-top: -40px;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+button{
+    padding: 11px;
+    border-radius: 20px;
+    width: 98px;
+    border: none;
+    height: 40px;
+    color: transparent;
+}
+button:hover{
+    background-color:transparent;
+    transition: all 0.3s ease-in-out;
+}
+.ml{
+    background-color: rgb(2, 40, 57);
+    color: grey;
+    text-align: center;
+    padding: 16px;
+    
+}
+.mi{background-color: rgb(2, 40, 57);
+    color: white;
+    
+    padding: 70px;
+   
+    margin-top: 850px;
+    margin-bottom: -147px;
+    margin-left: none;
+}
+.list
+{
+    margin-left: 400px;
+    gap: 20px;
+    text-align: justify;
+}
+b{
+    font-weight: bold;
+}
+table{
+    gap: 30px;
+    justify-content: space-between;
+    padding: 30px;
+    display: inline;
+    
+}
+
+.footer {
+  background-color: #101c2c;
+  color: #ffffff;
+  padding: 50px 5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer-section h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  color: #cccccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li:hover {
+  color: #ffffff;
+}
+.nav{
+    background-image: url(https://www.tedprime.net/_next/image?url=%2Fimages%2FtedprimeF.jpg&w=2048&q=75);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+}
+.btn {
+    position: fixed;
+}
+main{
+ background-color: transparent;
+
+}
+.hello{
+    margin-top: -450px;
+    padding: auto;
+    height: 700px;
+    background-color:rgb(255, 255, 255);
+    
+
+}
+.ik{
+    background-image: url(https://www.tedprime.net/_next/image?url=%2Fimages%2FtedprimeF.jpg&w=2048&q=75);
+}
+.head{
+    margin-left: 100px;
+    gap: 20px;
+    text-align: center;
+    border: none;
+
+}
+.mm{color: orange;}
+
+.in{
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-right: 100px;
+    text-align: center;
+    line-height: 1.6;
+    font-family: poppins;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 60px 10px 50px rgba(0, 0, 0, 0.5);
+    padding: 180px;
+    border-radius: 10px;
+    color: white;
+}
+.ol{
+    margin-top: -40px;
+    margin-bottom: 600px;
+    margin-right: 100px;
+    font-family: poppins;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 60px 10px 50px rgba(0, 0, 0, 0.5);
+    padding: 250px;
+    border-radius: 0px;
+    color: white;
+    width: 1000px;
+    display: flex;
+    height: 550px;
+}
+.ol h2{
+    color: white;
+    margin-left: -1200px;
+    font-size: 20px;
+}
+.ol h3{
+    font-size: 15px;
+}
+   .lo{
+    color: white;
+    text-align: left;
+    margin-bottom: 500px;
+    word-spacing: 10px;
+    gap: 10px;
+   }
+ .nvm{ text-align: center;
+
+justify-content: space-between;
+list-style-position: inside;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+.yellow{color: orange;}
+.we{display: flex;
+    gap: 20px;
+    
+   
+}
+#jk{
+    margin-top:-400px;
+    margin-bottom: 300px;
+}
+.op{
+    gap: 100px;
+}
+.div1{
+    background-color:rgb(255, 255, 255);
+    width: 700px;
+    height: 650px;
+    margin-left: 70px;
+    border-radius: 20px;
+    padding: 100px;
+    box-shadow: rgb(152, 152, 152) 3px 7px 60px;
+    
+}
+.div2{
+   background-color:rgb(255, 255, 255);
+    width: 700px;
+    height: 200px;
+    margin-left: 800px;
+    border-radius: 20px;
+    padding: 100px;
+    box-shadow: rgb(152, 152, 152) 3px 7px 60px;
+    border:300px;
+    margin-top: -650px;
+ 
+}
+.div3{
+    background-color:rgb(255, 255, 255);
+    width: 700px;
+    height: 200px;
+    margin-left: 800px;
+    border-radius: 20px;
+    padding: 100px;
+    box-shadow: rgb(152, 152, 152) 3px 7px 60px;
+    border:300px;
+    margin-top: 10px;
+    margin-right: -500px;
+}
+.div4{
+        background-color:rgb(255, 255, 255);
+    width: 700px;
+    height: 200px;
+    margin-left: 800px;
+    border-radius: 20px;
+    padding: 100px;
+    box-shadow: rgb(152, 152, 152) 3px 7px 60px;
+    border:300px;
+    margin-top: 15px;
+    margin-right: -500px;
+}
+.div1 img{
+border-radius: 20px;
+}
+.div1 p{
+    margin-top: 100px;
+} 
+.news{
+    
+margin-bottom: 550px;
+margin-top: -530px;
+text-align: center;
+}
+.news p{
+    color: orange;
+}
+/*#slide{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    animation:  20s slide infinite;
+    background-color: transparent;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+#slide figure img{
+   float: left;
+   width: 20%;
+}
+@keyframes slide{
+    0%{transform: translateX(0%);}
+    20%{transform: translateX(0%);}
+    25%{transform: translateX(-20%);}
+    45%{transform: translateX(-20%);}
+    50%{transform: translateX(-40%);}
+    70%{transform: translateX(-40%);}
+    75%{transform: translateX(-60%);}
+    95%{transform: translateX(-60%);}
+    100%{transform: translateX(-80%);}
+}
