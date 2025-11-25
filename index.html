@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Ride</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="signup page" href="/Pages/sign up.html">
+</head>
+<body >
+    <!-- Navigation Bar -->
+     <nav class="navbar">
+    <div class="logo">Power<span>Ride</span></div>
+    <ul class="nav-links">
+      <li><a href="/index4.html">Order Ride</a></li>
+      <li><a href="#map">Live Map</a></li>
+      <li><a href="/ai.jsx">AI Assistant</a></li>
+      <li><a href="#about">Safety</a></li>
+    </ul>
+    <a href="/ai.jsx">
+          <img src="/assets/img/chatbox-removebg-preview.png"  width="40px" class="bot"></a>
+        <img src="/assets/img/notification-removebg-preview.png"  width="40px" class="bell">
+    <img src="/assets/img/gg-removebg-preview.png" width="40px" class="user">
+    <h3>Google User</h3>
+    
+  </nav>
+                  <br><br><br><br><br><br><br><br><br> 
+
+
+                  <button id="shareLocationBtn">Share My Location</button>
+  
+  
+  <iframe id="mapFrame"></iframe>
+
+  <!-- <script src="/assets/js/script.js"></script> 
+     -->
+  
+
+
+
+                <div class="avail">
+                  <h class="availa"><a href="/index4.html">Available Rides</a> </h>
+                  <h class="availab"><a href="#map">Live Tracking Map</a></h>
+                  </div>
+
+
+              
+<br>
+<hero class="hero">
+   <div  class="your">
+      <h class="my">Order Your Ride</h>
+      <p>Choose your ride type and let our AI find the best route </p>
+     </div>
+     </hero>
+
+     <div class="ridepage">
+      <a href="/index4.html">
+      <button class="booknow">Book Ride Now</button></a>
+     </div>
+     <br><br><br><br>
+
+
+
+
+
+<section class="safety" id="about">
+
+  <div class="your">
+     <h class="my">
+  <img src="/assets/img/safety-removebg-preview.png" alt="Safety Icon" class="icon">
+Your  Safety Is Our Priority
+</h>
+      <p class="detail">Advanced security features to keep you safe</p>
+ <br>    </div>
+     <div class="safety-features">
+      <ul class="event">
+        <li class="real" style="text-align: center;"><strong>Real-Time Tracking</strong><br> Share your trip details with trusted contacts and track your ride in real-time.</li>
+        <li class="real" style="text-align: center;"><strong>Driver Background Checks</strong><br> All our drivers undergo thorough background checks to ensure your safety.</li>
+        <li class="real" style="text-align: center;"><strong>In-App Emergency Assistance</strong><br> Access emergency services directly from the app if you ever feel unsafe.</li>
+        <li class="real"  style="text-align: center;"><strong>24/7 Support</strong><br> Our support team is available around the clock to assist you with any concerns.</li>
+        <li class="real" style="text-align: center;"><strong>Contactless Rides</strong><br> Opt for contactless payment and ride options for added safety during your journey.</li>
+      </ul>
+     </div>
+     <br><br>
+</section>
+
+<footer class="foot">
+© 2025 UberPowerRide. All rights reserved.
+<p class="secure">Secure • Reliable • Fast</p>
+
+
+</footer>
+<!-- map  -->
+
+
+
+<div id="map"></div>
+  <script>
+    let map, marker;
+
+    // Initialize and add the map
+    function initMap() {
+      // Default location, will be updated to user's location
+      const defaultLoc = { lat: 0, lng: 0 };
+
+      // Create the map centered at default location
+      map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16,
+        center: defaultLoc,
+      });
+
+      // Place a marker at the default location
+      marker = new google.maps.Marker({
+        position: defaultLoc,
+        map: map,
+        title: "You are here",
+        icon: {
+          path: google.maps.SymbolPath.CIRCLE,
+          scale: 8,
+          fillColor: "#4285F4",
+          fillOpacity: 0.9,
+          strokeWeight: 2,
+          strokeColor: "#ffffff"
+        }
+      });
+
+      // Track user's location
+      if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(
+          position => {
+            const pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            // Update marker and center map
+            marker.setPosition(pos);
+            map.setCenter(pos);
+          },
+          error => {
+            alert('Error getting your location: ' + error.message);
+          },
+          {
+            enableHighAccuracy: true,
+            timeout: 10000,
+            maximumAge: 0
+          }
+        );
+      } else {
+        alert('Geolocation is not supported by your browser');
+      }
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUU8KQMrHiZ27tldj6FzGxxCF4W_6iX9I&callback=initMap">
+  </script>
+
+
+
+
+
+    
+  
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
